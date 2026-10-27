@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>X-DeskTop · 7×24 自主测试工厂</title>
+<link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+<div class="shell">
+  <header class="bar">
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <div class="t1">X-DeskTop</div>
+        <div class="t2">自主测试工厂 · 方案 → 分析 → 用例 → 执行 → 缺陷</div>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav">
+      <a data-v="overview" class="on">总览</a>
+      <a data-v="requirements">需求库</a>
+      <a data-v="cases">用例库</a>
+      <a data-v="lanes">任务线</a>
+      <a data-v="runs">运行记录</a>
+      <a data-v="defects">缺陷库</a>
+      <a data-v="models">模型</a>
+    </nav>
+
+    <div class="bar-r">
+      <span class="tag-demo" id="modeTag">连接中</span>
+      <span class="up"><span class="dot-live"></span><span id="upTime">--</span> 无人工干预</span>
+      <button class="btn ghost" id="helpBtn">? 使用指南</button>
+      <span class="clock" id="clock">--:--:--</span>
+    </div>
+  </header>
+
+  <section class="kpi" id="kpi"></section>
+
+  <main id="view"></main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<div class="modal" id="modal">
+  <div class="modal-b">
+    <div class="modal-h"><b id="modalTitle"></b><button id="modalClose" aria-label="关闭">×</button></div>
+    <div class="modal-c" id="modalBody"></div>
+  </div>
+</div>
+
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>

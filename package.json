@@ -1,0 +1,24 @@
+{
+  "name": "x-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "X-DeskTop · 7×24 自主软件测试工厂（前端 + 后端工程）",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.mjs",
+    "dev": "node --watch server/index.mjs",
+    "test": "node --test test/*.test.mjs",
+    "reset": "node server/scripts/reset.mjs",
+    "blank": "node server/scripts/blank.mjs"
+  },
+  "keywords": [
+    "qa",
+    "test-automation",
+    "agent",
+    "sse",
+    "dashboard"
+  ]
+}

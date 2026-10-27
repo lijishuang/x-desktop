@@ -1,0 +1,14 @@
+# 依赖与构建
+node_modules/
+*.log
+.DS_Store
+
+# 本地环境与数据（含 API Key，切勿提交）
+.env
+data/state.json
+data/*.json
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
